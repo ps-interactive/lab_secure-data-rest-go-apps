@@ -7,6 +7,8 @@ import (
 	"fmt"
 	"os"
 	"path/filepath"
+
+	_ "golang.org/x/crypto/bcrypt"
 )
 
 type User struct {
