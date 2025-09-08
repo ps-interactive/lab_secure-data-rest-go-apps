@@ -1,0 +1,19 @@
+Examine each of the options below and select the correct answer.
+
+{% choice %}
+{% question %}
+Why should passwords be hashed rather than stored in plain text in the PocketVault prototype?
+{% /question %}
+{% option %}
+To make it possible to recover forgotten passwords without user input.
+{% /option %}
+{% option %}
+To reduce disk usage because hashes are always shorter than passwords.
+{% /option %}
+{% option answer=true %}
+To protect user credentials even if the datastore is compromised, since hashes are non-reversible.
+{% /option %}
+{% option %}
+To avoid needing to store usernames alongside passwords.
+{% /option %}
+{% /choice %}

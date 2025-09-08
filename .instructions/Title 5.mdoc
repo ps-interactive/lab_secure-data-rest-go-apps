@@ -1,0 +1,19 @@
+Examine each of the options below and select the correct answer.
+
+{% choice %}
+{% question %}
+In AES-GCM encryption used by the app, why is a nonce generated and prepended to the ciphertext?
+{% /question %}
+{% option %}
+To hide the key inside the ciphertext for easier transport.
+{% /option %}
+{% option answer=true %}
+So the unique nonce can be used during decryption to derive the correct authentication tag and plaintext.
+{% /option %}
+{% option %}
+To reduce the size of the ciphertext when stored in JSON.
+{% /option %}
+{% option %}
+Because GCM requires the nonce to be the same for every encryption to be secure.
+{% /option %}
+{% /choice %}

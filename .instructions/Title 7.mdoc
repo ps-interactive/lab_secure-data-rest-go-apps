@@ -1,0 +1,19 @@
+Examine each of the options below and select the correct answer.
+
+{% choice %}
+{% question %}
+After switching to `//go:embed aes.key` where the key content is base64-encoded, what must the code do before using it for AES-GCM?
+{% /question %}
+{% option answer=true %}
+Base64-decode the embedded string into a byte slice to obtain the raw 32-byte key.
+{% /option %}
+{% option %}
+Hash the embedded key with bcrypt to improve strength.
+{% /option %}
+{% option %}
+Encrypt the embedded key with itself to avoid disclosure.
+{% /option %}
+{% option %}
+Convert the string to bytes with []byte(rawKey) and use it directly without decoding.
+{% /option %}
+{% /choice %}

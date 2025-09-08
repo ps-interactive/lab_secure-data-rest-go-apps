@@ -1,0 +1,19 @@
+Examine each of the options below and select the correct answer.
+
+{% choice %}
+{% question %}
+How should the login function verify a user's password after switching registration to store bcrypt hashes?
+{% /question %}
+{% option %}
+Hash the stored hash again and compare the two hashes as strings.
+{% /option %}
+{% option %}
+Decrypt the stored hash with the AES key and compare it to the provided password.
+{% /option %}
+{% option %}
+Compare the provided password to the stored hash using string equality.
+{% /option %}
+{% option answer=true %}
+Base64-decode the stored hash, then call bcrypt's comparison (e.g., CompareHashAndPassword) with the provided password.
+{% /option %}
+{% /choice %}

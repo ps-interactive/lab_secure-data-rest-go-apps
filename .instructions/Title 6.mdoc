@@ -1,0 +1,19 @@
+Examine each of the options below and select the correct answer.
+
+{% choice %}
+{% question %}
+What is the purpose of using `--mount=type=secret,id=aes.key` in the Docker build stage?
+{% /question %}
+{% option %}
+To permanently copy the key into the runtime image at `/internal/crypto/aes.key`.
+{% /option %}
+{% option %}
+To embed the key into environment variables for the running container.
+{% /option %}
+{% option %}
+To download the key from a public URL during the build.
+{% /option %}
+{% option answer=true %}
+To make the secret key available only to that RUN step during build, without persisting it in the final image layers.
+{% /option %}
+{% /choice %}

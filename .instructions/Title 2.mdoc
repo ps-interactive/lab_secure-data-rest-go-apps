@@ -1,0 +1,19 @@
+Examine each of the options below and select the correct answer.
+
+{% choice %}
+{% question %}
+When storing a bcrypt password hash in JSON, what additional step is needed before saving to the file?
+{% /question %}
+{% option answer=true %}
+Base64-encode the hash bytes so they can be represented as a JSON string.
+{% /option %}
+{% option %}
+Compress the hash with gzip to reduce the size.
+{% /option %}
+{% option %}
+Encrypt the hash using the same AES-GCM key used for notes.
+{% /option %}
+{% option %}
+Reverse the hash to make comparison faster during login.
+{% /option %}
+{% /choice %}
